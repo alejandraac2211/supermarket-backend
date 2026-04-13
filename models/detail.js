@@ -28,7 +28,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   });
 
-  Detail.associate = models => {
+    Detail.associate = models => {
     Detail.belongsTo(models.Sale, { foreignKey: 'saleId' });
     Detail.belongsTo(models.Product, { foreignKey: 'productId' });
   };
